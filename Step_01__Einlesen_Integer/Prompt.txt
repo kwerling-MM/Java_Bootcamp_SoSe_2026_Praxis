@@ -1,0 +1,30 @@
+Kontext:
+Wir bauen eine einfache stackbasierte Sprache in Java namens Jorth.
+Es gibt eine Methode run(String input), die ein Programm ausführt.
+Ein Stack speichert Werte.
+Tokens sind durch Leerzeichen getrennt.
+
+Aktueller Stand:
+Die Methode run existiert, macht aber noch nichts und gibt aktuell "[]" zurück.
+Am Ende soll run den Stackinhalt als String zurückgeben, z. B. "[3, 4]".
+
+Aufgabe:
+Ergänze die Methode run so, dass Ganzzahlen erkannt und auf den Stack gelegt werden.
+
+Beispiele:
+Input: "3"      → "[3]"
+Input: "3 4"    → "[3, 4]"
+
+Wichtig:
+- Keine komplette Umstrukturierung
+- Keine neuen Klassen
+- Keine externen Libraries
+- Bestehende Struktur beibehalten
+- Nur minimal notwendige Änderungen
+
+Qualität:
+- Einfacher, gut lesbarer Java-Code
+- Keine unnötige Komplexität
+
+Ausgabe:
+Bitte liefere die vollständige Methode run.
