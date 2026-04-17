@@ -1,0 +1,36 @@
+Kontext:
+Wir entwickeln Jorth, eine einfache stackbasierte Sprache in Java.
+Aktuell werden Ganzzahlen erkannt und auf den Stack gelegt.
+Die Commands "+" und "-" funktionieren bereits.
+Tokens werden durch Leerzeichen getrennt.
+
+Aufgabe:
+Ergänze die Methode run so, dass auch der Command "." unterstützt wird.
+
+Verhalten von ".":
+- Gibt das oberste Element des Stacks aus
+- Der Stack soll dabei unverändert bleiben
+
+Beispiele:
+"3 4 ." → Ausgabe: 4
+"3 4 + ." → Ausgabe: 7
+"10 3 - ." → Ausgabe: 7
+
+Wichtig:
+- Bestehende Funktionalität darf nicht verändert werden
+- "+" und "-" müssen weiterhin korrekt funktionieren
+- Zahlen müssen weiterhin korrekt erkannt werden
+- Keine komplette Umstrukturierung
+- Keine neuen Klassen
+- Nur minimale Änderungen
+
+Zusätzliche Aufgabe:
+Erstelle auch neue JUnit-Tests für den "." Command, auch für Edge Cases.
+
+Qualität:
+- Einfacher, verständlicher Code
+- Tests sollen klar und nachvollziehbar sein
+
+Ausgabe:
+- Die vollständige Methode run
+- Die neuen Testmethoden

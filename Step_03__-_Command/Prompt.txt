@@ -1,0 +1,38 @@
+Kontext:
+Wir entwickeln Jorth, eine einfache stackbasierte Sprache in Java.
+Aktuell werden Ganzzahlen erkannt und auf den Stack gelegt.
+Der "+" Command funktioniert bereits.
+Tokens werden durch Leerzeichen getrennt.
+
+Aufgabe:
+Ergänze die Methode run so, dass auch der Command "-" unterstützt wird.
+
+Verhalten von "-":
+- Nimmt die beiden obersten Werte vom Stack
+- Das oberste Element ist der rechte Operand
+- Das darunterliegende Element ist der linke Operand
+- Berechnet: linker Operand - rechter Operand
+- Legt das Ergebnis wieder auf den Stack
+
+Beispiele:
+"10 3 -" → "[7]"
+"3 4 -"  → "[-1]"
+
+Wichtig:
+- Bestehende Funktionalität darf nicht verändert werden
+- "+" muss weiterhin funktionieren
+- Zahlen müssen weiterhin korrekt erkannt werden
+- Keine komplette Umstrukturierung
+- Keine neuen Klassen
+- Nur minimale Änderungen
+
+Zusätzliche Aufgabe:
+Erstelle zusätzliche JUnit-Tests für den "-" Command, auch für Fälle, die die Operandenreihenfolge prüfen.
+
+Qualität:
+- Einfacher, verständlicher Code
+- Tests sollen klar und nachvollziehbar sein
+
+Ausgabe:
+- Die vollständige Methode run
+- Die neuen Testmethoden

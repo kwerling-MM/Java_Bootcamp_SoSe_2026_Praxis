@@ -1,0 +1,41 @@
+Kontext:
+Wir bauen eine einfache stackbasierte Sprache in Java namens Jorth.
+Die Methode run(String input) verarbeitet Tokens von links nach rechts.
+Aktuell werden Ganzzahlen korrekt erkannt und auf einen Stack gelegt.
+
+Aktueller Stand:
+Zahlen funktionieren bereits.
+Andere Tokens werden aktuell ignoriert.
+Referenztests existieren und dürfen nicht verändert werden.
+
+Aufgabe:
+Ergänze die Methode run so, dass der Command "+" unterstützt wird.
+
+Verhalten von "+":
+- Nimmt die beiden obersten Werte vom Stack
+- Addiert sie
+- Legt das Ergebnis wieder auf den Stack
+
+Beispiele:
+"3 4 +" → "[7]"
+"10 2 +" → "[12]"
+"11 3 8 1 + + +" → "[23]"
+
+Wichtig:
+- Bestehende Funktionalität darf nicht verändert werden
+- Referenztests dürfen nicht angepasst werden
+- Keine komplette Umstrukturierung
+- Keine neuen Klassen
+- Nur minimale Änderungen
+
+Zusätzliche Aufgabe:
+Erstelle zusätzlich neue JUnit-Tests für den "+" Command.
+Diese Tests sollen auch Edge Cases abdecken.
+
+Qualität:
+- Einfacher, verständlicher Code
+- Tests sollen klar und nachvollziehbar sein
+
+Ausgabe:
+- Die vollständige Methode run
+- Die neuen Testmethoden

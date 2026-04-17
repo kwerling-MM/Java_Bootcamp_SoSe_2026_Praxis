@@ -1,0 +1,30 @@
+Kontext:
+Wir entwickeln Jorth, eine stackbasierte Sprache in Java.
+Zahlen, Strings und die Commands "+", "-", "." funktionieren bereits.
+Referenztests existieren und dürfen nicht verändert werden.
+
+Aufgabe:
+Ergänze den neuen Command "dup".
+
+Verhalten:
+- Kopiert das oberste Element des Stacks
+- Legt die Kopie oben auf den Stack
+- Funktioniert für alle Typen
+- Wenn der Stack leer ist, passiert nichts
+
+Beispiele:
+"3 dup" → "[3, 3]"
+"\"ab\" dup" → "[ab, ab]"
+"3 dup +" → "[6]"
+
+Wichtig:
+- Bestehende Funktionalität darf nicht verändert werden
+- Keine komplette Umstrukturierung
+- Keine neuen Klassen
+
+Zusätzliche Aufgabe:
+Erstelle JUnit-Tests für "dup"
+
+Ausgabe:
+- vollständige Methode run
+- neue Tests

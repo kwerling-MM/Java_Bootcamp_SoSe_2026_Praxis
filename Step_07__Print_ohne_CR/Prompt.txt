@@ -1,0 +1,51 @@
+Kontext:
+Wir entwickeln Jorth, eine stackbasierte Sprache in Java.
+Aktuell werden Zahlen, Strings und die Commands "+", "-" und "." unterstützt.
+
+Aktueller Stand:
+Der Command "." gibt das oberste Element des Stacks mit System.out.println aus.
+Strings werden bereits korrekt ohne Anführungszeichen auf dem Stack gespeichert.
+Referenztests existieren und dürfen nicht verändert werden.
+
+Aufgabe:
+Erweitere die Ausgabe-Commands.
+
+Anforderungen:
+
+1. "." soll weiterhin funktionieren:
+   - Gibt das oberste Stack-Element aus
+   - Mit Zeilenumbruch
+
+2. Neuer Command "._":
+   - Gibt das oberste Stack-Element aus
+   - Ohne Zeilenumbruch (System.out.print)
+
+3. Strings sollen korrekt ausgegeben werden:
+   - Ohne Anführungszeichen
+   - Genau so, wie sie im Stack liegen
+
+4. Der Stack darf durch die Ausgabe nicht verändert werden
+
+Beispiele:
+"abc" . → Ausgabe: abc\n
+"abc" ._ → Ausgabe: abc
+27 "Die Summe ist " ._ . → Ausgabe: Die Summe ist 27
+
+Wichtig:
+- Bestehende Funktionalität darf nicht verändert werden
+- Referenztests dürfen nicht angepasst werden
+- "+" und "-" müssen weiterhin korrekt funktionieren
+- Keine komplette Umstrukturierung
+- Keine neuen Klassen
+- Nur minimale Änderungen
+
+Zusätzliche Aufgabe:
+Erstelle neue JUnit-Tests für "." und "._", auch für Kombinationen.
+
+Qualität:
+- Einfacher, verständlicher Code
+- Tests sollen klar und nachvollziehbar sein
+
+Ausgabe:
+- Die vollständige Methode run
+- Die neuen Testmethoden

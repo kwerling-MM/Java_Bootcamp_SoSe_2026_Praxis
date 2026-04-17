@@ -1,0 +1,46 @@
+Kontext:
+Wir entwickeln Jorth, eine stackbasierte Sprache in Java.
+Aktuell werden Zahlen erkannt und die Commands "+", "-" und "." funktionieren.
+Tokens werden aktuell mit split("\\s+") verarbeitet.
+
+Aktueller Stand:
+Zahlen und Commands funktionieren korrekt.
+Referenztests existieren und dürfen nicht verändert werden.
+
+Problem:
+Die aktuelle Tokenisierung funktioniert nicht für Strings mit Leerzeichen,
+z. B. "hello world".
+
+Aufgabe:
+Erweitere die Tokenisierung so, dass Strings korrekt erkannt werden.
+
+Anforderungen:
+- Strings sind in doppelte Anführungszeichen eingeschlossen
+- Ein String kann Leerzeichen enthalten
+- Der gesamte String soll als ein Token behandelt werden
+- Die Anführungszeichen sollen entfernt werden
+- Zahlen und bestehende Commands müssen weiterhin funktionieren
+
+Beispiele:
+"hello" → ["hello"]
+"hello world" → ["hello world"]
+"hello" 3 → ["hello", 3]
+
+Wichtig:
+- Bestehende Funktionalität darf nicht verändert werden
+- Referenztests dürfen nicht angepasst werden
+- Keine komplette Umstrukturierung
+- Keine neuen Klassen
+- Nur minimale Änderungen
+
+Zusätzliche Aufgabe:
+Erstelle neue JUnit-Tests für die String-Verarbeitung.
+Die Tests sollen auch Edge Cases abdecken.
+
+Qualität:
+- Einfacher, verständlicher Code
+- Tests sollen klar und nachvollziehbar sein
+
+Ausgabe:
+- Die vollständige Methode run
+- Die neuen Testmethoden

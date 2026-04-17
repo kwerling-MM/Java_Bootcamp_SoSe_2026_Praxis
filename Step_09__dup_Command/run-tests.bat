@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 @echo off
 set JUNIT_JAR=..\lib\junit-platform-console-standalone-6.0.3.jar
 

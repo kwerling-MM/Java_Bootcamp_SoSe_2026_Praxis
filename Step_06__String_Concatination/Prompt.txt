@@ -1,0 +1,44 @@
+Kontext:
+Wir entwickeln Jorth, eine stackbasierte Sprache in Java.
+Aktuell werden Ganzzahlen, Strings in doppelten Anführungszeichen und die Commands "+", "-" und "." unterstützt.
+Strings werden bereits korrekt als ein Token erkannt und ohne Anführungszeichen auf den Stack gelegt.
+
+Aktueller Stand:
+Der Command "+" funktioniert bisher nur für Integer + Integer.
+Wenn bei "+" keine zwei Integer auf dem Stack liegen, werden die beiden Operanden aktuell unverändert zurück auf den Stack gelegt.
+Referenztests existieren und dürfen nicht verändert werden.
+
+Aufgabe:
+Erweitere den Command "+" so, dass auch String + String unterstützt wird.
+
+Verhalten:
+- Integer + Integer → numerische Addition
+- String + String → Verkettung
+- andere Typkombinationen sollen sich vorerst weiterhin wie bisher verhalten
+
+Beispiele:
+"ab" "cd" + → "[abcd]"
+"hello " "world" + → "[hello world]"
+3 4 + → "[7]"
+"ab" 3 + → "[ab, 3]"
+
+Wichtig:
+- Bestehende Funktionalität darf nicht verändert werden
+- Referenztests dürfen nicht angepasst werden
+- "-" und "." müssen weiterhin korrekt funktionieren
+- Strings müssen weiterhin ohne Anführungszeichen auf dem Stack landen
+- Keine komplette Umstrukturierung
+- Keine neuen Klassen
+- Nur minimale Änderungen
+
+Zusätzliche Aufgabe:
+Erstelle neue JUnit-Tests für String + String.
+Die Tests sollen auch Randfälle abdecken.
+
+Qualität:
+- Einfacher, verständlicher Code
+- Tests sollen klar und nachvollziehbar sein
+
+Ausgabe:
+- Die vollständige Methode run
+- Die neuen Testmethoden

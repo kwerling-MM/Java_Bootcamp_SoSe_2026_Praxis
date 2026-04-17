@@ -1,0 +1,43 @@
+Kontext:
+Wir entwickeln Jorth, eine stackbasierte Sprache in Java.
+Aktuell werden Zahlen, Strings und die Commands "+", "-" und "." unterstützt.
+Die Methode run ist aktuell statisch.
+Referenztests existieren und dürfen nicht verändert werden.
+
+Aufgabe:
+Führe zwei Änderungen durch:
+
+1. Refactoring:
+- Mache die Methode run zu einer Instanzmethode statt einer statischen Methode.
+- Passe die Tests so an, dass sie mit einem Jorth-Objekt arbeiten.
+- Verwende in den Tests @BeforeEach, um vor jedem Test eine neue Jorth-Instanz anzulegen.
+
+2. Neue Funktionalität:
+- Ergänze den neuen Command "drop".
+- "drop" entfernt das oberste Element vom Stack.
+- Wenn der Stack leer ist, soll nichts passieren.
+
+Beispiele:
+"3 4 drop" → "[3]"
+"\"abc\" drop" → "[]"
+"3 4 + drop" → "[]"
+
+Wichtig:
+- Bestehende Funktionalität darf nicht verändert werden
+- Referenztests dürfen inhaltlich nicht abgeschwächt werden
+- "+", "-", ".", String-Verarbeitung und bestehende Semantik müssen erhalten bleiben
+- Keine komplette Umstrukturierung
+- Keine neuen Klassen
+- Nur minimale Änderungen
+
+Zusätzliche Aufgabe:
+- Erstelle neue JUnit-Tests für den Command "drop"
+- Passe die bestehenden Tests auf die Instanzverwendung mit @BeforeEach an
+
+Qualität:
+- Einfacher, verständlicher Code
+- Tests sollen klar und nachvollziehbar sein
+
+Ausgabe:
+- Die vollständige Klasse Jorth
+- Die vollständige Testklasse JorthTest
