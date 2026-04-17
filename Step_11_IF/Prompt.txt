@@ -1,0 +1,37 @@
+Kontext:
+Wir entwickeln Jorth, eine stackbasierte Sprache in Java.
+Zahlen, Strings, "+", "-", ".", "dup" und Vergleichsoperatoren funktionieren bereits.
+
+Aufgabe:
+Implementiere eine einfache Kontrollstruktur mit:
+
+if ... else ... endif
+
+Verhalten:
+- Nimmt oberstes Stackelement als Bedingung
+- 0 = false, alles andere = true
+- führt nur den passenden Block aus
+
+Syntax:
+<condition> if <block1> else <block2> endif
+
+Beispiele:
+"1 if \"yes\" else \"no\" endif" → "[yes]"
+"0 if \"yes\" else \"no\" endif" → "[no]"
+"3 4 < if \"yes\" else \"no\" endif" → "[yes]"
+
+Vereinfachungen:
+- keine verschachtelten ifs
+- else optional
+- nur Integer als Bedingung
+
+Wichtig:
+- Bestehende Funktionalität darf nicht verändert werden
+- Tokens müssen ggf. gesammelt werden (nicht direkt ausführen)
+
+Zusätzliche Aufgabe:
+Erstelle Tests für if/else/endif
+
+Ausgabe:
+- vollständige Klasse Jorth
+- vollständige Tests
